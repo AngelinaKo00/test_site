@@ -33,12 +33,15 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'news',
-
+    
+    'allauth',
+    'allauth.account',
 ]
 
 # Настройки django-registration-redux
@@ -142,3 +145,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
+SITE_ID = 1
