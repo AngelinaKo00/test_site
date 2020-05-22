@@ -47,8 +47,8 @@ INSTALLED_APPS = [
 # Настройки django-registration-redux
 ACCOUNT_ACTIVATION_DAYS = 7 #кол-во дней для активайии аккаунта
 REGISTRATION_AUTO_LOGIN = True # в значении True после активации пользователи войдут в аккаунт
-LOGIN_REDIRECT_URL =  'profile' # URL-адрес или именованный шаблон URL, в котором находятся запросы перенаправляется после входа в систему
-LOGIN_URL  =  'login'   # пользователи страницы направляются, если они не вошли в систему, 
+LOGIN_REDIRECT_URL =  'post_list' # URL-адрес или именованный шаблон URL, в котором находятся запросы перенаправляется после входа в систему
+#LOGIN_URL  =  'login'   # пользователи страницы направляются, если они не вошли в систему, 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
